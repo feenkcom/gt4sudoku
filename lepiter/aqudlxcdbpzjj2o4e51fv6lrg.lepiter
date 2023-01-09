@@ -1,0 +1,76 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-01-09T14:31:17.73877+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-01-09T14:31:17.73877+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "3pJjhDauDQC74wu1BdSBtQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "\nSimple strategies.\nPointing to identify hidden singles.\n\nPointing to remove candidates.\nNaked singles.\nUse Naked sets to eliminate candidates.\n\n\n\nInteractions\nPlaying: manually set squares or candidates\nApply a strategy or set of strategies\nShow which strategies can be applied\n\nStrategies\nhttps://sudokusnake.com/techniques.php\nhttps://www.sudopedia.org/wiki/Solving_technique\n\nHidden singles\nCan be in any house (row, column or box).\nCan identify by candidates.\nCan also identify by visualizing which cells are eliminated.\nhttp://www.sudokusnake.com/hiddensingles.php\n\nPointing\nUse to eliminate candidates.\n\nClaiming\n"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2023-01-09T14:31:09.794108+01:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2023-01-09T14:31:09.794108+01:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Strategies"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "ac1e6384-36ae-0d00-bbe2-e90b05d481b5"
+	}
+}
