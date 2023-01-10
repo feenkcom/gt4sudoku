@@ -183,7 +183,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-10T17:17:26.033693+01:00"
+									"dateAndTimeString" : "2023-01-10T17:17:32.788774+01:00"
 								}
 							},
 							"uid" : {
@@ -193,7 +193,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Access"
+							"string" : "Accessing rows, columns and blocks"
 						},
 						{
 							"__type" : "textSnippet",
@@ -209,7 +209,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-10T17:00:58.538787+01:00"
+									"dateAndTimeString" : "2023-01-10T17:55:10.786238+01:00"
 								}
 							},
 							"editEmail" : {
@@ -220,7 +220,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-10T17:00:58.538787+01:00"
+									"dateAndTimeString" : "2023-01-10T17:55:26.255517+01:00"
 								}
 							},
 							"uid" : {
@@ -230,7 +230,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : ""
+							"string" : "TO DO: cache the rows etc in slots"
 						},
 						{
 							"__type" : "textSnippet",

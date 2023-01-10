@@ -3,7 +3,9 @@ Class {
 	#superclass : #Object,
 	#instVars : [
 		'grid',
-		'rawData'
+		'rawData',
+		'columns',
+		'boxes'
 	],
 	#category : #'Gt4Sudoku-Model'
 }
@@ -15,22 +17,26 @@ Sudoku >> atRow: row col: col [
 
 { #category : #accessing }
 Sudoku >> boxes [
-	^ (1 to: 3)
-		flatCollect: [ :x | 
-			(1 to: 3)
-				collect: [ :y | 
-					| startx starty |
-					startx := (x - 1) * 3 + 1.
-					starty := (y - 1) * 3 + 1.
+	boxes
+		ifNil: [ boxes := (1 to: 3)
+					flatCollect: [ :x | 
+						(1 to: 3)
+							collect: [ :y | 
+								| startx starty |
+								startx := (x - 1) * 3 + 1.
+								starty := (y - 1) * 3 + 1.
 
-					(startx to: startx + 2)
-						flatCollect: [ :row | (starty to: starty + 2) collect: [ :col | self atRow: row col: col ] ] ] ]
+								(startx to: startx + 2)
+									flatCollect: [ :row | (starty to: starty + 2) collect: [ :col | self atRow: row col: col ] ] ] ] ].
+	^ boxes
 ]
 
 { #category : #accessing }
 Sudoku >> columns [
-	^ (1 to: 9)
-		collect: [ :col | (1 to: 9) collect: [ :row | self atRow: row col: col ] ]
+	columns
+		ifNil: [ columns := (1 to: 9)
+					collect: [ :col | (1 to: 9) collect: [ :row | self atRow: row col: col ] ] ].
+	^ columns
 ]
 
 { #category : #gui }
