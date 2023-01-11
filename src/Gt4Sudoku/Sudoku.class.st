@@ -10,6 +10,29 @@ Class {
 	#category : #'Gt4Sudoku-Model'
 }
 
+{ #category : #example }
+Sudoku class >> for: aString [
+	^ self new rawData: aString
+]
+
+{ #category : #printing }
+Sudoku >> asSimpleSudokuString [
+	"The Simple Sudoku representation"
+
+	| rowStrings |
+	rowStrings := self rows
+			collect: [ :row | '|' , ('|' join: (('' join: (row collect: #ssValue)) groupsOf: 3)) , '|' ].
+
+	^ '*-----------*
+'
+		, ('
+|---+---+---|
+' join: ((rowStrings groupsOf: 3) collect: [ :each | String cr join: each ]))
+		, '
+*-----------*
+'
+]
+
 { #category : #accessing }
 Sudoku >> atRow: row col: col [
 	^ (grid at: row) at: col
@@ -25,10 +48,14 @@ Sudoku >> boxes [
 								| startx starty |
 								startx := (x - 1) * 3 + 1.
 								starty := (y - 1) * 3 + 1.
-
 								(startx to: startx + 2)
 									flatCollect: [ :row | (starty to: starty + 2) collect: [ :col | self atRow: row col: col ] ] ] ] ].
 	^ boxes
+]
+
+{ #category : #private }
+Sudoku >> cleanData [
+	^ rawData select: [ :char | '0123456789 ._' includes: char ]
 ]
 
 { #category : #accessing }
@@ -39,12 +66,20 @@ Sudoku >> columns [
 	^ columns
 ]
 
+{ #category : #accessing }
+Sudoku >> gtBoxesFor: aView [
+<gtView>
+
+^ aView forward
+	title: 'Boxes'; priority: 20; object: [self boxes]; view: #gtItemsFor:
+]
+
 { #category : #gui }
-Sudoku >> gtCellsFor: aView [
+Sudoku >> gtGridFor: aView [
 	<gtView>
 	| aColumnedList |
 	aColumnedList := aView columnedList
-			title: 'Cells';
+			title: 'Grid';
 			priority: 10;
 			items: [ grid ];
 			column: 'Row/Col' text: [ :each | (grid indexOf: each) asString ] width: 60.
@@ -57,6 +92,17 @@ Sudoku >> gtCellsFor: aView [
 	^ aColumnedList
 ]
 
+{ #category : #accessing }
+Sudoku >> gtSimpleSudokuFor: aView [
+	<gtView>
+	^ aView textEditor
+		title: 'Simple Sudoku';
+		priority: 30;
+		aptitude: BrGlamorousCodeEditorAptitude;
+		text: [ self asSimpleSudokuString asRopedText ];
+		actionUpdateButton
+]
+
 { #category : #initialization }
 Sudoku >> initialize [
 	self initializeGrid
@@ -66,6 +112,11 @@ Sudoku >> initialize [
 Sudoku >> initializeGrid [
 	grid := (1 to: 9)
 		collect: [ :row | (1 to: 9) collect: [ :col | SuCell row: row col: col ] ]
+]
+
+{ #category : #printing }
+Sudoku >> printOn: aStream [
+	self storeOn: aStream
 ]
 
 { #category : #private }
@@ -87,6 +138,14 @@ Sudoku >> sdm [
 	^ '' join: (grid collect: [ :rowData | '' join: (rowData collect: #sdmValue) ])
 ]
 
+{ #category : #printing }
+Sudoku >> storeOn: aStream [
+	aStream
+		nextPutAll: self class name;
+		nextPutAll: ' for: ';
+		store: self sdm
+]
+
 { #category : #initialization }
 Sudoku >> updateCells [
 	^ 1
@@ -94,5 +153,5 @@ Sudoku >> updateCells [
 		do: [ :row | 
 			1
 				to: 9
-				do: [ :col | (self atRow: row col: col) value: (rawData at: (row - 1) * 9 + col) ] ]
+				do: [ :col | (self atRow: row col: col) value: (self cleanData at: (row - 1) * 9 + col) ] ]
 ]

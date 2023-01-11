@@ -108,7 +108,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-10T17:17:45.379074+01:00"
+									"dateAndTimeString" : "2023-01-10T17:34:34.160843+01:00"
 								}
 							},
 							"uid" : {
@@ -118,7 +118,44 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Accessing rows, columns and blocks]] "
+							"string" : "[[Accessing rows, columns and boxes]] "
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-01-11T15:30:39.525666+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-01-11T15:32:19.818163+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "u++nfV+uDQC8vMqSBdk6dg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "[[NEXT: Export simple sudoku format]] "
 						}
 					]
 				},

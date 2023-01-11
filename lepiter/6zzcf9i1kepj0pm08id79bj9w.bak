@@ -8,6 +8,43 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-01-11T15:31:04.01403+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-01-11T15:31:37.047039+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "3yImll+uDQC83+zyBdk6dg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "The [simple sudoku](https://sudopedia.sudocue.net/index.php/Sudoku_Clipboard_and_File_Formats#Simple_Sudoku_format_.28.2A.ss.29) (.ss) format is more readable, and should be compatible for importing."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
 					"items" : [
 						{
 							"__type" : "textSnippet",
@@ -23,7 +60,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-10T17:04:32.586785+01:00"
+									"dateAndTimeString" : "2023-01-11T15:37:15.484578+01:00"
 								}
 							},
 							"editEmail" : {
@@ -34,17 +71,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-10T17:06:48.741512+01:00"
+									"dateAndTimeString" : "2023-01-11T15:37:29.986815+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "w3JmxkyuDQCFL93aDfZwZw=="
+								"uidString" : "8L78q1+uDQC894orBdk6dg=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "In this first stage we wrap the sdm of an easy sudoku in a Sudoku object, populate a grid of Cells, introduce a simple Inspector view, and create a few examples to test accessing cells ofthe grid and generating the sdm again from the grid."
+							"string" : "```language=text\n*-----------*\n|...|...|...|\n|...|...|...|\n|...|...|...|\n|---+---+---|\n|...|...|...|\n|...|...|...|\n|...|...|...|\n|---+---+---|\n|...|...|...|\n|...|...|...|\n|...|...|...|\n*-----------*\n```"
 						}
 					]
 				},
@@ -56,7 +93,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T17:05:25.678933+01:00"
+						"dateAndTimeString" : "2023-01-11T15:37:02.793987+01:00"
 					}
 				},
 				"editEmail" : {
@@ -67,17 +104,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T17:05:27.609165+01:00"
+						"dateAndTimeString" : "2023-01-11T15:37:07.036088+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "HzmkyUyuDQCFOFrhDfZwZw=="
+					"uidString" : "JsJJmF+uDQC84q+SBdk6dg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "#TL;DR"
+				"string" : "It should look like this:"
 			},
 			{
 				"__type" : "textSnippet",
@@ -93,7 +130,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T11:55:58.428175+01:00"
+						"dateAndTimeString" : "2023-01-11T15:45:00.836579+01:00"
 					}
 				},
 				"editEmail" : {
@@ -104,17 +141,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T16:37:00.055975+01:00"
+						"dateAndTimeString" : "2023-01-11T15:45:09.656712+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "O5kfd0iuDQC4JA1YCYzSxw=="
+					"uidString" : "TdDix1+uDQC9YWLbBdk6dg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "We start by wrapping an easy example sudoku."
+				"string" : "We first grab an example."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -130,7 +167,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T16:36:21.432759+01:00"
+						"dateAndTimeString" : "2023-01-11T15:37:58.55395+01:00"
 					}
 				},
 				"editEmail" : {
@@ -141,14 +178,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T16:36:28.24101+01:00"
+						"dateAndTimeString" : "2023-01-11T15:38:06.677855+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "fAD1YUyuDQCElBAWDfZwZw=="
+					"uidString" : "abECr1+uDQC9Bz2yBdk6dg=="
 				},
-				"code" : "easy := '050703060007000800000816000000030000005000100730040086906000204840572093000409000'."
+				"code" : "easy := SudokuExamples new easy."
 			},
 			{
 				"__type" : "textSnippet",
@@ -164,7 +201,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T14:00:57.004922+01:00"
+						"dateAndTimeString" : "2023-01-11T15:37:45.7819+01:00"
 					}
 				},
 				"editEmail" : {
@@ -175,17 +212,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T14:01:00.47342+01:00"
+						"dateAndTimeString" : "2023-01-11T15:39:31.896957+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "RtJxkkiuDQC4c8GqCYzSxw=="
+					"uidString" : "XJRwrV+uDQC9AaS1Bdk6dg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Let's wrap it:"
+				"string" : "Let's first try to generate a single row"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -201,7 +238,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T12:04:07.945637+01:00"
+						"dateAndTimeString" : "2023-01-11T15:38:11.551909+01:00"
 					}
 				},
 				"editEmail" : {
@@ -212,14 +249,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T16:37:19.009897+01:00"
+						"dateAndTimeString" : "2023-01-11T15:44:22.646015+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "tMVnlEiuDQC4fUlECYzSxw=="
+					"uidString" : "XAXJr1+uDQC9DGo/Bdk6dg=="
 				},
-				"code" : "Sudoku new rawData: easy."
+				"code" : "('|' join: (('' join: (easy rows first collect: #ssValue)) groupsOf: 3))"
 			},
 			{
 				"__type" : "textSnippet",
@@ -235,7 +272,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T14:20:18.49691+01:00"
+						"dateAndTimeString" : "2023-01-11T15:47:52.293727+01:00"
 					}
 				},
 				"editEmail" : {
@@ -246,54 +283,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T14:30:35.761824+01:00"
+						"dateAndTimeString" : "2023-01-11T15:49:47.086897+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "36n/q0iuDQC48Qz/CYzSxw=="
+					"uidString" : "u0gM0l+uDQC9iusmBdk6dg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "We'd like to put these in a grid of Cells. (Do this in the Inspector playground.)"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T14:39:29.37915+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T14:39:42.368489+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "4fHtv0quDQC2B6JGBbOY+Q=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "We initailize the Cells so each Cell knows its position."
+				"string" : "We apply this to each row and add the start and end or-bars:"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -309,7 +309,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T14:35:43.190687+01:00"
+						"dateAndTimeString" : "2023-01-11T15:46:56.912549+01:00"
 					}
 				},
 				"editEmail" : {
@@ -320,14 +320,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T14:39:49.515794+01:00"
+						"dateAndTimeString" : "2023-01-11T15:52:58.469793+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "rzKGskquDQC1/IHfBbOY+Q=="
+					"uidString" : "gWEZz1+uDQC9cSK5Bdk6dg=="
 				},
-				"code" : "(1 to: 9)\r\tcollect: [ :row | (1 to: 9) collect: [ :col | Cell row: row col: col ] ]"
+				"code" : "rowStrings := easy rows\r\t\tcollect: [ :row | '|' , ('|' join: (('' join: (row collect: #ssValue)) groupsOf: 3)) , '|' ]"
 			},
 			{
 				"__type" : "textSnippet",
@@ -343,7 +343,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T14:41:36.835712+01:00"
+						"dateAndTimeString" : "2023-01-11T15:48:02.817243+01:00"
 					}
 				},
 				"editEmail" : {
@@ -354,54 +354,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T15:23:34.44989+01:00"
+						"dateAndTimeString" : "2023-01-11T15:54:04.401598+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "fXimxkquDQC2DQkcBbOY+Q=="
+					"uidString" : "RVJDsV+uDQC9EvNSBdk6dg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "We'll use this to initialize the grid."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T14:43:36.047807+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T14:43:59.910104+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "wUCvzkquDQC2JpHUBbOY+Q=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Now we'll fix the sdm: setter to set values of the grid."
+				"string" : "Now we can glue each group of three into a single string:"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -417,7 +380,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T14:44:03.779275+01:00"
+						"dateAndTimeString" : "2023-01-11T15:48:22.444409+01:00"
 					}
 				},
 				"editEmail" : {
@@ -428,14 +391,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T17:13:01.681295+01:00"
+						"dateAndTimeString" : "2023-01-11T15:54:07.079862+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "3ZJc0EquDQC2LN3nBbOY+Q=="
+					"uidString" : "hYEy1F+uDQC9lEK9Bdk6dg=="
 				},
-				"code" : "1 to: 9\r\tdo: [ :row | \r\t\t1 to: 9\r\t\t\tdo: [ :col | (self atRow: row col: col) value: (rawData at: (row - 1) * 9 + col) ] ]"
+				"code" : "(rowStrings groupsOf: 3) collect: [ :each | String cr join: each ]"
 			},
 			{
 				"__type" : "textSnippet",
@@ -451,7 +414,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T17:13:16.99305+01:00"
+						"dateAndTimeString" : "2023-01-11T15:57:02.563139+01:00"
 					}
 				},
 				"editEmail" : {
@@ -462,202 +425,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T17:13:31.748984+01:00"
+						"dateAndTimeString" : "2023-01-11T15:59:36.053949+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "B7nz5UyuDQCFaEFrDfZwZw=="
+					"uidString" : "rNcl81+uDQC9n8tJBdk6dg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "We have to implement {{gtMethod:name=Sudoku>>atRow:col:}}. "
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T14:49:35.75063+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T17:08:17.232118+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "VTyqxkquDQC2EkiHBbOY+Q=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "We'll extract this as an {{gtMethod:name=Sudoku>>updateCells}} method."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T14:50:59.511579+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T14:51:03.709185+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "Ibbr5EquDQC2V70DBbOY+Q=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Time for a view."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T15:10:22.100456+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-11T15:32:49.591185+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "wvhpLkuuDQC2a8v4BbOY+Q=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "We implement {{gtMethod:name=Sudoku>>gtGridFor:}}. "
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T17:52:31.018404+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T17:52:54.273203+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "VYBCck2uDQCGetesDfZwZw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "We implement {{gtMethod:name=SuCell>>printOn:}} so when we click on a row we see the values."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T15:16:43.985739+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T15:16:49.857575+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "mAckRUuuDQC2rZAjBbOY+Q=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Let's turn this into an example."
+				"string" : "And we can join these fragments together, adding the start and end strings."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -673,7 +451,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T15:16:55.695359+01:00"
+						"dateAndTimeString" : "2023-01-11T15:54:11.724983+01:00"
 					}
 				},
 				"editEmail" : {
@@ -684,14 +462,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T16:38:25.310059+01:00"
+						"dateAndTimeString" : "2023-01-11T15:59:02.938301+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "DqDlRUuuDQC2s2KIBbOY+Q=="
+					"uidString" : "gBkE6V+uDQC9mUqyBdk6dg=="
 				},
-				"code" : "SudokuExamples new easy"
+				"code" : "'*-----------*\r'\r\t, ('\r|---+---+---|\r'\r\tjoin: ((rowStrings groupsOf: 3) collect: [ :each | String cr join: each ])) , '\r*-----------*\r'"
 			},
 			{
 				"__type" : "textSnippet",
@@ -707,7 +485,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T15:18:18.317277+01:00"
+						"dateAndTimeString" : "2023-01-11T15:59:39.54289+01:00"
 					}
 				},
 				"editEmail" : {
@@ -718,17 +496,54 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T15:18:25.685357+01:00"
+						"dateAndTimeString" : "2023-01-11T16:03:46.209954+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "MQKgSkuuDQC2uYNlBbOY+Q=="
+					"uidString" : "sg+c0V+uDQC9hUPkBdk6dg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "And we can embed it as a snippet:"
+				"string" : "Now let's turn this into a Sudoku method: {{gtMethod:name=Sudoku>>asSimpleSudokuString}}. "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-01-11T16:03:49.211264+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-01-11T16:03:56.285638+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "gAkGC2CuDQC9uR2fBdk6dg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Let's use it for a view."
 			},
 			{
 				"__type" : "exampleSnippet",
@@ -744,7 +559,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T15:18:30.466585+01:00"
+						"dateAndTimeString" : "2023-01-11T16:05:35.596142+01:00"
 					}
 				},
 				"editEmail" : {
@@ -755,16 +570,16 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T15:18:30.466585+01:00"
+						"dateAndTimeString" : "2023-01-11T16:05:35.596142+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "LLiLS0uuDQC2v7LvBbOY+Q=="
+					"uidString" : "fSbHEWCuDQC9wRNdBdk6dg=="
 				},
 				"exampleSelector" : "easy",
-				"previewHeight" : 270,
-				"previewShowSelector" : "gtGridFor:",
+				"previewHeight" : 250,
+				"previewShowSelector" : "gtSimpleSudokuFor:",
 				"exampleBehaviorName" : "SudokuExamples",
 				"codeExpanded" : true,
 				"previewExpanded" : false,
@@ -784,7 +599,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T16:44:33.117217+01:00"
+						"dateAndTimeString" : "2023-01-11T16:11:42.284624+01:00"
 					}
 				},
 				"editEmail" : {
@@ -795,17 +610,54 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T16:44:39.587055+01:00"
+						"dateAndTimeString" : "2023-01-11T16:12:05.074686+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "NV9lQkuuDQC2pjAXBbOY+Q=="
+					"uidString" : "EZ/e+l+uDQC9pOeyBdk6dg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Let's add some simple tests."
+				"string" : "We can also test that this format can be used as an alternative to the sdm."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-01-11T16:18:25.687991+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-01-11T16:25:53.133283+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "xkGhP2CuDQC+GEWGBdk6dg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "As it turns out, we cannot directly use the raw data, but we must clean it by ignoring all but digits and other acceptable characters to represent blank cells. We implement this in {{gtMethod:Sudoku>>cleanData}}. and now use it in {{gtMethod:name=Sudoku>>updateCells}}. "
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -821,7 +673,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T17:00:16.464812+01:00"
+						"dateAndTimeString" : "2023-01-11T16:12:16.716986+01:00"
 					}
 				},
 				"editEmail" : {
@@ -832,14 +684,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T17:00:22.970831+01:00"
+						"dateAndTimeString" : "2023-01-11T16:25:31.284385+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "aNl9t0yuDQCEzY/fDfZwZw=="
+					"uidString" : "xsSvKWCuDQC+CD9CBdk6dg=="
 				},
-				"code" : "SudokuExamples new easyPositions ."
+				"code" : "SudokuExamples new easySimpleSudoku"
 			},
 			{
 				"__type" : "textSnippet",
@@ -855,7 +707,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T17:07:02.465572+01:00"
+						"dateAndTimeString" : "2023-01-11T16:28:49.246403+01:00"
 					}
 				},
 				"editEmail" : {
@@ -866,17 +718,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T17:07:22.73806+01:00"
+						"dateAndTimeString" : "2023-01-11T16:29:23.535688+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "E76ez0yuDQCFTv0BDfZwZw=="
+					"uidString" : "f+YNKWCuDQC+Az+9Bdk6dg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "We create an example to test the generation of the sdm."
+				"string" : "As a coda, we implement the storeOn: method and use it for the printOn: as well."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -892,7 +744,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T16:44:52.647428+01:00"
+						"dateAndTimeString" : "2023-01-11T16:29:33.772974+01:00"
 					}
 				},
 				"editEmail" : {
@@ -903,88 +755,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T17:00:16.466645+01:00"
+						"dateAndTimeString" : "2023-01-11T16:31:47.499502+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "FIZtgEyuDQCEtDrPDfZwZw=="
+					"uidString" : "v/x/Z2CuDQC+Xdw5Bdk6dg=="
 				},
-				"code" : "SudokuExamples new easySdm."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T17:07:31.466982+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T17:07:49.545803+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "0ss30UyuDQCFVOIiDfZwZw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "And we implement  the sdm generation in {{gtMethod:name=Sudoku>>sdm}}. "
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T16:44:40.665211+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T16:44:40.665211+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "Na+2f0yuDQCErtO5DfZwZw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
+				"code" : "easy storeString "
 			}
 		]
 	},
@@ -996,7 +774,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-01-10T11:55:56.642494+01:00"
+			"dateAndTimeString" : "2023-01-11T15:31:01.415877+01:00"
 		}
 	},
 	"editEmail" : {
@@ -1007,15 +785,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-01-10T11:55:56.642494+01:00"
+			"dateAndTimeString" : "2023-01-11T16:28:47.823539+01:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Wrapping an example"
+		"title" : "Export simple sudoku format"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "56141f77-48ae-0d00-b823-303d098cd2c7"
+		"uuid" : "54ab2596-5fae-0d00-bcde-51f905d93a76"
 	}
 }

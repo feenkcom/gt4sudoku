@@ -664,6 +664,43 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-01-11T15:23:36.492097+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-01-11T15:23:48.686276+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "U1qAe1+uDQC8t7sXBdk6dg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "We add a forwarding view for this. (Later we may replace th"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2023-01-10T17:55:46.269813+01:00"
 					}
 				},
@@ -675,7 +712,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T17:55:58.306799+01:00"
+						"dateAndTimeString" : "2023-01-10T17:56:04.718303+01:00"
 					}
 				},
 				"uid" : {
@@ -685,7 +722,44 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Finally we cache the values of the columns and boxes t"
+				"string" : "Finally we cache the values of the columns and boxes to avoid recomputing them."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-01-10T17:56:11.883346+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-01-10T17:56:11.883346+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "q3Z9f02uDQCHgYHrDfZwZw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
 			}
 		]
 	},

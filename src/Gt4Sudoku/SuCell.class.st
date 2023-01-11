@@ -39,7 +39,16 @@ SuCell >> row: aDigit [
 
 { #category : #accessing }
 SuCell >> sdmValue [
+	"Produce the SDM value (0 for blanks)."
+
 	^ value = Character space ifTrue: [ $0 ] ifFalse: [ value ]
+]
+
+{ #category : #printing }
+SuCell >> ssValue [
+	"Produce the Simple Soduku value (dot for blanks)"
+
+	^ value = Character space ifTrue: [ $. ] ifFalse: [ value ]
 ]
 
 { #category : #accessing }

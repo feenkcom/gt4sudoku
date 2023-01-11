@@ -320,14 +320,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T14:39:49.515794+01:00"
+						"dateAndTimeString" : "2023-01-11T15:33:16.66192+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "rzKGskquDQC1/IHfBbOY+Q=="
 				},
-				"code" : "(1 to: 9)\r\tcollect: [ :row | (1 to: 9) collect: [ :col | Cell row: row col: col ] ]"
+				"code" : "(1 to: 9)\r\tcollect: [ :row | (1 to: 9) collect: [ :col | SuCell row: row col: col ] ]"
 			},
 			{
 				"__type" : "textSnippet",
@@ -573,7 +573,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-10T16:31:41.855452+01:00"
+						"dateAndTimeString" : "2023-01-11T15:32:49.591185+01:00"
 					}
 				},
 				"uid" : {
@@ -583,7 +583,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "We implement {{gtMethod:name=Sudoku>>gtCellsFor:}}. "
+				"string" : "We implement {{gtMethod:name=Sudoku>>gtGridFor:}}. "
 			},
 			{
 				"__type" : "textSnippet",
@@ -764,7 +764,7 @@
 				},
 				"exampleSelector" : "easy",
 				"previewHeight" : 270,
-				"previewShowSelector" : "gtCellsFor:",
+				"previewShowSelector" : "gtGridFor:",
 				"exampleBehaviorName" : "SudokuExamples",
 				"codeExpanded" : true,
 				"previewExpanded" : false,

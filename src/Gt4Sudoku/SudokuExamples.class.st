@@ -4,13 +4,13 @@ Class {
 	#category : #'Gt4Sudoku-Examples'
 }
 
-{ #category : #accessing }
+{ #category : #example }
 SudokuExamples >> easy [
 	<gtExample>
 	^ Sudoku new rawData: self easyData
 ]
 
-{ #category : #accessing }
+{ #category : #data }
 SudokuExamples >> easyData [
 	<gtExample>
 	^ '050703060007000800000816000000030000005000100730040086906000204840572093000409000'
@@ -43,7 +43,7 @@ SudokuExamples >> easyHouses [
 	^ easy
 ]
 
-{ #category : #accessing }
+{ #category : #example }
 SudokuExamples >> easyPositions [
 	<gtExample>
 	| easy |
@@ -53,7 +53,7 @@ SudokuExamples >> easyPositions [
 	^ easy
 ]
 
-{ #category : #accessing }
+{ #category : #example }
 SudokuExamples >> easySdm [
 	<gtExample>
 	| easy |
@@ -62,7 +62,29 @@ SudokuExamples >> easySdm [
 	^ easy
 ]
 
-{ #category : #accessing }
+{ #category : #example }
+SudokuExamples >> easySimpleSudoku [
+	"Verify that the Simple Sudoku representation can be used as an alternatiuve to sdm as input data."
+
+	<gtExample>
+	| easy easy2 |
+	easy := self easy.
+	easy2 := Sudoku for: self easy asSimpleSudokuString.
+	self assert: easy sdm equals: easy2 sdm.
+	^ easy2
+]
+
+{ #category : #example }
+SudokuExamples >> easyStoreString [
+	<gtExample>
+	| easy easy2 |
+	easy := self easy.
+	easy2 := Smalltalk compiler evaluate: easy storeString.
+	self assert: easy sdm equals: easy2 sdm.
+	^ easy
+]
+
+{ #category : #example }
 SudokuExamples >> sudoku20min20220530 [
 	<gtExample>
 	^ Sudoku new
