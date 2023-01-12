@@ -69,7 +69,7 @@ SudokuExamples >> easySimpleSudoku [
 	<gtExample>
 	| easy easy2 |
 	easy := self easy.
-	easy2 := Sudoku for: self easy asSimpleSudokuString.
+	easy2 := Sudoku for: self easy simpleSudokuString.
 	self assert: easy sdm equals: easy2 sdm.
 	^ easy2
 ]

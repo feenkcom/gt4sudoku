@@ -15,24 +15,6 @@ Sudoku class >> for: aString [
 	^ self new rawData: aString
 ]
 
-{ #category : #printing }
-Sudoku >> asSimpleSudokuString [
-	"The Simple Sudoku representation"
-
-	| rowStrings |
-	rowStrings := self rows
-			collect: [ :row | '|' , ('|' join: (('' join: (row collect: #ssValue)) groupsOf: 3)) , '|' ].
-
-	^ '*-----------*
-'
-		, ('
-|---+---+---|
-' join: ((rowStrings groupsOf: 3) collect: [ :each | String cr join: each ]))
-		, '
-*-----------*
-'
-]
-
 { #category : #accessing }
 Sudoku >> atRow: row col: col [
 	^ (grid at: row) at: col
@@ -51,6 +33,34 @@ Sudoku >> boxes [
 								(startx to: startx + 2)
 									flatCollect: [ :row | (starty to: starty + 2) collect: [ :col | self atRow: row col: col ] ] ] ] ].
 	^ boxes
+]
+
+{ #category : #printing }
+Sudoku >> candidateGrid [
+	"The Simple Sudoku representation"
+
+	| rowStrings topBottom separator |
+	rowStrings := self rows
+			collect: [ :row | 
+				'| '
+					, (' | '
+							join: (((row collect: [ :cell | cell candidates padRightTo: 9 ]) groupsOf: 3)
+									collect: [ :group | ' ' join: group ])) , ' |' ].
+
+	topBottom := '*' , ('-' repeat: 10 * 9 + 5) , '*'.
+	separator := '
+|' , ('+' join: ((1 to: 3) collect: [ :n | '-' repeat: 10 * 3 + 1 ]))
+			, '|
+'.
+	^ topBottom , String cr
+		, (separator
+				join: ((rowStrings groupsOf: 3) collect: [ :group | String cr join: group ]))
+		, String cr , topBottom
+]
+
+{ #category : #accessing }
+Sudoku >> cells [
+	^ self rows flatten
 ]
 
 { #category : #private }
@@ -72,6 +82,17 @@ Sudoku >> gtBoxesFor: aView [
 
 ^ aView forward
 	title: 'Boxes'; priority: 20; object: [self boxes]; view: #gtItemsFor:
+]
+
+{ #category : #accessing }
+Sudoku >> gtCandidatesFor: aView [
+	<gtView>
+	^ aView textEditor
+		title: 'Candidates';
+		priority: 35;
+		aptitude: BrGlamorousCodeEditorAptitude;
+		text: [ self candidateGrid asRopedText ];
+		actionUpdateButton
 ]
 
 { #category : #gui }
@@ -99,7 +120,7 @@ Sudoku >> gtSimpleSudokuFor: aView [
 		title: 'Simple Sudoku';
 		priority: 30;
 		aptitude: BrGlamorousCodeEditorAptitude;
-		text: [ self asSimpleSudokuString asRopedText ];
+		text: [ self simpleSudokuString asRopedText ];
 		actionUpdateButton
 ]
 
@@ -136,6 +157,24 @@ Sudoku >> rows [
 { #category : #printing }
 Sudoku >> sdm [
 	^ '' join: (grid collect: [ :rowData | '' join: (rowData collect: #sdmValue) ])
+]
+
+{ #category : #printing }
+Sudoku >> simpleSudokuString [
+	"The Simple Sudoku representation"
+
+	| rowStrings |
+	rowStrings := self rows
+			collect: [ :row | '|' , ('|' join: (('' join: (row collect: #ssValue)) groupsOf: 3)) , '|' ].
+
+	^ '*-----------*
+'
+		, ('
+|---+---+---|
+' join: ((rowStrings groupsOf: 3) collect: [ :each | String cr join: each ]))
+		, '
+*-----------*
+'
 ]
 
 { #category : #printing }

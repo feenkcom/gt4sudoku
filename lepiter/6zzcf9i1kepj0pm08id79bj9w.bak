@@ -496,7 +496,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-11T16:03:46.209954+01:00"
+						"dateAndTimeString" : "2023-01-12T09:51:31.364801+01:00"
 					}
 				},
 				"uid" : {
@@ -506,7 +506,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Now let's turn this into a Sudoku method: {{gtMethod:name=Sudoku>>asSimpleSudokuString}}. "
+				"string" : "Now let's turn this into a Sudoku method: {{gtMethod:name=Sudoku>>aimpleSudokuString}}. "
 			},
 			{
 				"__type" : "textSnippet",
@@ -755,14 +755,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-11T16:31:47.499502+01:00"
+						"dateAndTimeString" : "2023-01-11T16:33:52.563123+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "v/x/Z2CuDQC+Xdw5Bdk6dg=="
 				},
-				"code" : "easy storeString "
+				"code" : "SudokuExamples new easyStoreString"
 			}
 		]
 	},

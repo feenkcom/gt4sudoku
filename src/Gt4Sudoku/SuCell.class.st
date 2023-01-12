@@ -4,7 +4,8 @@ Class {
 	#instVars : [
 		'value',
 		'row',
-		'col'
+		'col',
+		'candidates'
 	],
 	#category : #'Gt4Sudoku-Model'
 }
@@ -23,8 +24,32 @@ SuCell class >> with: aCharacter [
 ]
 
 { #category : #accessing }
+SuCell >> candidates [
+	candidates isNil
+		ifTrue: [ self isEmpty
+				ifTrue: [ candidates := '123456789' ]
+				ifFalse: [ candidates := self value asString ] ].
+	^ candidates
+]
+
+{ #category : #accessing }
 SuCell >> col: aDigit [
 	col := aDigit
+]
+
+{ #category : #constant }
+SuCell >> emptyValue [
+	^ Character space
+]
+
+{ #category : #testing }
+SuCell >> isEmpty [
+	^ self value = self emptyValue
+]
+
+{ #category : #accessing }
+SuCell >> notEmpty [
+	^ self isEmpty not
 ]
 
 { #category : #accessing }
@@ -41,14 +66,14 @@ SuCell >> row: aDigit [
 SuCell >> sdmValue [
 	"Produce the SDM value (0 for blanks)."
 
-	^ value = Character space ifTrue: [ $0 ] ifFalse: [ value ]
+	^ self isEmpty ifTrue: [ $0 ] ifFalse: [ value ]
 ]
 
 { #category : #printing }
 SuCell >> ssValue [
 	"Produce the Simple Soduku value (dot for blanks)"
 
-	^ value = Character space ifTrue: [ $. ] ifFalse: [ value ]
+	^ self isEmpty ifTrue: [ $. ] ifFalse: [ value ]
 ]
 
 { #category : #accessing }
