@@ -211,14 +211,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-12T09:48:54.260588+01:00"
+						"dateAndTimeString" : "2023-01-13T09:15:24.143972+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "UMFIrm6uDQCeCrgCBnklXg=="
 				},
-				"code" : "emptyCell := easy cells detect: #isEmpty "
+				"code" : "emptyCell := easy cells detect: #isSolved"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -316,14 +316,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-12T09:44:32.02611+01:00"
+						"dateAndTimeString" : "2023-01-13T09:15:35.547909+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "s4rE3G6uDQCeQAeUBnklXg=="
 				},
-				"code" : "notEmptyCell := SudokuExamples new easy cells detect: #notEmpty "
+				"code" : "notEmptyCell := SudokuExamples new easy cells detect: #notSolved"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -986,7 +986,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-12T10:37:41.755416+01:00"
+						"dateAndTimeString" : "2023-01-12T10:38:04.026758+01:00"
 					}
 				},
 				"uid" : {
@@ -996,7 +996,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Next, we will want to eliminate candidates according to "
+				"string" : "Next, we will want to eliminate candidates according to the non-empty cells in the same house (row, column or box)."
 			}
 		]
 	},

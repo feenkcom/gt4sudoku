@@ -26,7 +26,7 @@ SuCell class >> with: aCharacter [
 { #category : #accessing }
 SuCell >> candidates [
 	candidates isNil
-		ifTrue: [ self isEmpty
+		ifTrue: [ self notSolved
 				ifTrue: [ candidates := '123456789' ]
 				ifFalse: [ candidates := self value asString ] ].
 	^ candidates
@@ -43,13 +43,13 @@ SuCell >> emptyValue [
 ]
 
 { #category : #testing }
-SuCell >> isEmpty [
-	^ self value = self emptyValue
+SuCell >> isSolved [
+	^ self notSolved not
 ]
 
 { #category : #accessing }
-SuCell >> notEmpty [
-	^ self isEmpty not
+SuCell >> notSolved [
+	^ (self value = self emptyValue) 
 ]
 
 { #category : #accessing }
@@ -66,14 +66,14 @@ SuCell >> row: aDigit [
 SuCell >> sdmValue [
 	"Produce the SDM value (0 for blanks)."
 
-	^ self isEmpty ifTrue: [ $0 ] ifFalse: [ value ]
+	^ self notSolved ifTrue: [ $0 ] ifFalse: [ value ]
 ]
 
 { #category : #printing }
 SuCell >> ssValue [
 	"Produce the Simple Soduku value (dot for blanks)"
 
-	^ self isEmpty ifTrue: [ $. ] ifFalse: [ value ]
+	^ self notSolved ifTrue: [ $. ] ifFalse: [ value ]
 ]
 
 { #category : #accessing }
