@@ -63,6 +63,11 @@ Sudoku >> cells [
 	^ self rows flatten
 ]
 
+{ #category : #accessing }
+Sudoku >> checkInvariant [
+	self cells do: [ :cell | self assert: cell invariant ]
+]
+
 { #category : #private }
 Sudoku >> cleanData [
 	^ rawData select: [ :char | '0123456789 ._' includes: char ]

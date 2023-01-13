@@ -44,6 +44,15 @@ SudokuExamples >> easyHouses [
 ]
 
 { #category : #example }
+SudokuExamples >> easyInvariant [
+	<gtExample>
+	| easy |
+	easy := self easy.
+	easy checkInvariant.
+	^ easy
+]
+
+{ #category : #example }
 SudokuExamples >> easyPositions [
 	<gtExample>
 	| easy |

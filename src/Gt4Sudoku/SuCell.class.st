@@ -42,6 +42,15 @@ SuCell >> emptyValue [
 	^ Character space
 ]
 
+{ #category : #contracts }
+SuCell >> invariant [
+	^ self candidates notEmpty
+		and: [ (self isSolved 
+			and: [ self candidates size = 1 ])
+		or: [ self notSolved 
+			and: [ self candidates size > 1 ] ] ]
+]
+
 { #category : #testing }
 SuCell >> isSolved [
 	^ self notSolved not
